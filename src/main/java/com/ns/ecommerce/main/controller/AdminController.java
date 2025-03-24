@@ -55,7 +55,7 @@ public class AdminController
 	public String checkAdminLogin(@RequestParam String username, @RequestParam String password, HttpSession session,
 			Model model)
 	{
-		if ("murthy".equals(username) && "321".equals(password))
+		if ("subash".equals(username) && "321".equals(password))
 		{
 			session.setAttribute("admin", username);
 			return "redirect:/admin/dashboard";
